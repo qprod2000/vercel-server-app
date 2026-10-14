@@ -1,0 +1,6 @@
+{
+  "name": "Cloud Server Portal – Registrasi User & Katalog Layanan",
+  "description": "Halaman depan (frontpage) server cloud mandiri dengan pendaftaran user, katalog seluruh fasilitas server (WordPress, cloud storage, database), dan status real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
