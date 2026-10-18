@@ -37,7 +37,7 @@ export const SERVER_STATS = {
   storagePercent: 34,
   networkSpeed: '10 Gbps Port (Unmetered)',
   activeUsers: 84,
-  totalServices: 10
+  totalServices: 11
 };
 
 export const SERVER_FACILITIES: ServerFacility[] = [
@@ -54,6 +54,20 @@ export const SERVER_FACILITIES: ServerFacility[] = [
     status: 'online',
     actionLabel: 'Luncurkan Storyboard AI',
     loginUrlExample: 'https://storyboard-ai-taupe.vercel.app'
+  },
+  {
+    id: 'llm-chat',
+    category: 'hosting',
+    name: 'LLM Chat & Dokumen',
+    badge: 'Asisten AI Pribadi',
+    shortDesc: 'Chat AI dengan banyak model gratis, mode jawaban terbaik, dan konteks dari dokumen yang Anda unggah.',
+    fullDesc: 'Aplikasi chat LLM yang berjalan di Vercel. Mendukung model cadangan otomatis, mode "Jawaban terbaik" (beberapa model + penilai), unggah dokumen (PDF teks, txt, md, csv, json) sebagai konteks, dan server MCP untuk klien lain. Akses dilindungi kata sandi khusus aplikasi ini.',
+    specs: ['Deployed di Vercel (Aktif)', 'Multi-model + Fallback Otomatis', 'Unggah Dokumen sebagai Konteks', 'Server MCP (/api/mcp)'],
+    protocol: 'HTTPS',
+    portOrEndpoint: 'llm-ten-delta.vercel.app',
+    status: 'online',
+    actionLabel: 'Buka LLM Chat',
+    loginUrlExample: 'https://llm-ten-delta.vercel.app'
   },
   {
     id: 'wordpress-cms',

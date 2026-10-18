@@ -11,8 +11,8 @@ export const FacilitiesCatalog: React.FC<FacilitiesCatalogProps> = ({ onOpenLaun
   const [filterCategory, setFilterCategory] = useState<string>('all');
 
   const categories = [
-    { id: 'all', label: 'Semua Fasilitas', count: 10 },
-    { id: 'hosting', label: 'Web Apps & Hosting', count: 4 },
+    { id: 'all', label: 'Semua Fasilitas', count: 11 },
+    { id: 'hosting', label: 'Web Apps & Hosting', count: 5 },
     { id: 'storage', label: 'Storage & Drive', count: 1 },
     { id: 'database', label: 'Database Relasional', count: 1 },
     { id: 'devops', label: 'DevOps & Docker', count: 2 },
