@@ -10,13 +10,15 @@ interface FacilitiesCatalogProps {
 export const FacilitiesCatalog: React.FC<FacilitiesCatalogProps> = ({ onOpenLaunchpad, onRegisterClick }) => {
   const [filterCategory, setFilterCategory] = useState<string>('all');
 
+  const countBy = (cat: string) => SERVER_FACILITIES.filter((f) => f.category === cat).length;
+
   const categories = [
-    { id: 'all', label: 'Semua Fasilitas', count: 11 },
-    { id: 'hosting', label: 'Web Apps & Hosting', count: 5 },
-    { id: 'storage', label: 'Storage & Drive', count: 1 },
-    { id: 'database', label: 'Database Relasional', count: 1 },
-    { id: 'devops', label: 'DevOps & Docker', count: 2 },
-    { id: 'network', label: 'Jaringan & Email', count: 2 },
+    { id: 'all', label: 'Semua Fasilitas', count: SERVER_FACILITIES.length },
+    { id: 'hosting', label: 'Web Apps & Hosting', count: countBy('hosting') },
+    { id: 'storage', label: 'Storage & Drive', count: countBy('storage') },
+    { id: 'database', label: 'Database Relasional', count: countBy('database') },
+    { id: 'devops', label: 'DevOps & Docker', count: countBy('devops') },
+    { id: 'network', label: 'Jaringan & Email', count: countBy('network') },
   ];
 
   const filteredFacilities = filterCategory === 'all'
