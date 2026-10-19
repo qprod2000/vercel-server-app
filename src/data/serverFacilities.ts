@@ -70,6 +70,20 @@ export const SERVER_FACILITIES: ServerFacility[] = [
     loginUrlExample: 'https://llm-ten-delta.vercel.app'
   },
   {
+    id: 'nas-player',
+    category: 'storage',
+    name: 'NAS Player (Musik Cloud)',
+    badge: 'Pemutar Musik Pribadi',
+    shortDesc: 'Putar koleksi musik pribadi dari penyimpanan cloud, langsung di browser, dengan akses khusus pemilik.',
+    fullDesc: 'Pemutar musik pribadi yang mengalirkan lagu dari penyimpanan cloud (Cloudflare R2). Mendukung seek dan putar otomatis ke lagu berikutnya. Akses dilindungi Cloudflare Access (login email dengan kode sekali pakai), dan tautan streaming bertanda tangan yang kedaluwarsa otomatis.',
+    specs: ['Streaming dengan Range (seek)', 'Cloudflare Access (OTP Email)', 'URL Streaming Bertanda Tangan', 'Penyimpanan Cloudflare R2'],
+    protocol: 'HTTPS',
+    portOrEndpoint: 'play.adua.my.id',
+    status: 'online',
+    actionLabel: 'Buka NAS Player',
+    loginUrlExample: 'https://play.adua.my.id'
+  },
+  {
     id: 'wordpress-cms',
     category: 'hosting',
     name: 'WordPress CMS Hosting',
