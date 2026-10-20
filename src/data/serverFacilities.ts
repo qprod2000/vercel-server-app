@@ -84,6 +84,20 @@ export const SERVER_FACILITIES: ServerFacility[] = [
     loginUrlExample: 'https://play.adua.my.id'
   },
   {
+    id: 'emas-tracker',
+    category: 'hosting',
+    name: 'Emas Tracker (Harga Antam)',
+    badge: 'Harga Emas Antam Otomatis',
+    shortDesc: 'Pemantau harga emas Antam harian dengan grafik riwayat, ekspor Excel/PDF, dan proyeksi tren harga.',
+    fullDesc: 'Aplikasi web yang berjalan di Vercel. Harga beli emas Antam 1 gram diambil otomatis dari Logam Mulia (lewat API komunitas tidak resmi) dan disimpan di database Neon beserta riwayatnya. Bila sumber resmi terganggu, aplikasi beralih ke estimasi dari harga emas dunia (XAU/USD) dan kurs USD/IDR, dengan label yang jelas. Harga buyback dapat dikoreksi manual lewat token admin. Proyeksi harga dihitung dari indikator teknikal dengan narasi dari Gemini.',
+    specs: ['Deployed di Vercel (Aktif)', 'Harga Antam resmi + cadangan estimasi', 'Riwayat harga tersimpan di Neon Postgres', 'Ekspor Excel & PDF, proyeksi teknikal'],
+    protocol: 'HTTPS',
+    portOrEndpoint: 'emas-tracker-app.vercel.app',
+    status: 'online',
+    actionLabel: 'Buka Emas Tracker',
+    loginUrlExample: 'https://emas-tracker-app.vercel.app'
+  },
+  {
     id: 'wordpress-cms',
     category: 'hosting',
     name: 'WordPress CMS Hosting',
